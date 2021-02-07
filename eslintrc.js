@@ -29,6 +29,7 @@ module.exports = {
     project: './tsconfig.json',
   },
   rules: {
+    quotes: [2, 'single', { avoidEscape: true }],
     'linebreak-style': 'off',
     'prettier/prettier': [
       'error',
