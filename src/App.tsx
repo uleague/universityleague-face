@@ -1,103 +1,71 @@
-import React, { useState } from "react";
-import {
-  Box,
-  Button,
-  Heading,
-  Grommet,
-  Collapsible,
-  ResponsiveContext,
-  Layer,
-} from "grommet";
-import { Notification, FormClose } from "grommet-icons";
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Box, Button, Heading, Grommet, ResponsiveContext } from 'grommet';
+import { Notification } from 'grommet-icons';
+import { Landing } from './pages/Landing';
+import { News } from './pages/News';
+import { Blog } from './pages/Blog';
+import { Partners } from './pages/Partners';
 
 const theme = {
   global: {
     colors: {
-      brand: "#1E202B",
+      brand: '#1E202B',
     },
     font: {
-      family: "Roboto",
-      size: "18px",
-      height: "20px",
+      family: 'Roboto',
+      size: '18px',
+      height: '20px',
     },
   },
 };
 
-const AppBar = (props: any) => (
+const Header = (props: any) => (
   <Box
-    tag="header"
-    direction="row"
-    align="center"
-    justify="between"
-    background="brand"
-    pad={{ left: "medium", right: "small", vertical: "small" }}
-    elevation="medium"
-    style={{ zIndex: "1" }}
+    tag='header'
+    direction='row'
+    align='center'
+    justify='between'
+    background='brand'
+    pad={{ left: 'medium', right: 'small', vertical: 'small' }}
+    elevation='medium'
+    style={{ zIndex: '1' }}
     {...props}
   />
 );
 
 export const App = () => {
-  const [showSidebar, setShowSidebar] = useState(false);
   return (
-    <Grommet theme={theme} full themeMode="dark">
-      <ResponsiveContext.Consumer>
-        {(size) => (
-          <Box fill>
-            <AppBar>
-              <Heading level="3" margin="none">
-                ULeague
-              </Heading>
-              <Button
-                icon={<Notification />}
-                onClick={() => setShowSidebar(!showSidebar)}
-              />
-            </AppBar>
-            <Box direction="row" flex overflow={{ horizontal: "hidden" }}>
-              <Box flex align="center" justify="center">
-                app body
-              </Box>
-              {!showSidebar || size !== "small" ? (
-                <Collapsible direction="horizontal" open={showSidebar}>
-                  <Box
-                    flex
-                    width="medium"
-                    background="light-2"
-                    elevation="small"
-                    align="center"
-                    justify="center"
-                  >
-                    sidebar
-                  </Box>
-                </Collapsible>
-              ) : (
-                <Layer>
-                  <Box
-                    background="light-2"
-                    tag="header"
-                    justify="end"
-                    align="center"
-                    direction="row"
-                  >
-                    <Button
-                      icon={<FormClose />}
-                      onClick={() => setShowSidebar(false)}
-                    />
-                  </Box>
-                  <Box
-                    fill
-                    background="light-2"
-                    align="center"
-                    justify="center"
-                  >
-                    sidebar
-                  </Box>
-                </Layer>
-              )}
+    <Router>
+      <Grommet theme={theme} full themeMode='dark'>
+        <ResponsiveContext.Consumer>
+          {(size) => (
+            <Box fill>
+              <Header>
+                <Heading level='3' margin='none'>
+                  ULeague
+                </Heading>
+                <Button icon={<Notification />} onClick={() => {}} />
+              </Header>
+
+              <Switch>
+                <Route path='/blog'>
+                  <Blog />
+                </Route>
+                <Route path='/news'>
+                  <News />
+                </Route>
+                <Route path='/partners'>
+                  <Partners />
+                </Route>
+                <Route path='/'>
+                  <Landing />
+                </Route>
+              </Switch>
             </Box>
-          </Box>
-        )}
-      </ResponsiveContext.Consumer>
-    </Grommet>
+          )}
+        </ResponsiveContext.Consumer>
+      </Grommet>
+    </Router>
   );
 };
