@@ -1,51 +1,42 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Box, Button, Heading, Grommet, ResponsiveContext } from 'grommet';
-import { Notification } from 'grommet-icons';
+import {
+  Box,
+  Heading,
+  Grommet,
+  ResponsiveContext,
+  Nav,
+  Footer,
+  Text,
+  Anchor,
+  Header,
+} from 'grommet';
 import { Landing } from './pages/Landing';
 import { News } from './pages/News';
 import { Blog } from './pages/Blog';
 import { Partners } from './pages/Partners';
 
-const theme = {
-  global: {
-    colors: {
-      brand: '#1E202B',
-    },
-    font: {
-      family: 'Roboto',
-      size: '18px',
-      height: '20px',
-    },
-  },
-};
-
-const Header = (props: any) => (
-  <Box
-    tag='header'
-    direction='row'
-    align='center'
-    justify='between'
-    background='brand'
-    pad={{ left: 'medium', right: 'small', vertical: 'small' }}
-    elevation='medium'
-    style={{ zIndex: '1' }}
-    {...props}
-  />
-);
+import { ReactComponent as Logo } from './images/logo_sm.svg';
+import { customTheme } from './theme';
 
 export const App = () => {
   return (
     <Router>
-      <Grommet theme={theme} full themeMode='dark'>
+      <Grommet theme={customTheme} full themeMode='dark'>
         <ResponsiveContext.Consumer>
           {(size) => (
             <Box fill>
-              <Header>
+              <Header justify='start' gap='none' background='#292B36' pad='small'>
+                <Logo />
                 <Heading level='3' margin='none'>
-                  ULeague
+                  ULEAGUE
                 </Heading>
-                <Button icon={<Notification />} onClick={() => {}} />
+                <Nav direction='row'>
+                  <Anchor label='Главная' href='/' />
+                  <Anchor label='Турниры' href='/tournaments' />
+                  <Anchor label='Новости' href='/news' />
+                  <Anchor label='Блог' href='/blog' />
+                </Nav>
               </Header>
 
               <Switch>
@@ -62,6 +53,31 @@ export const App = () => {
                   <Landing />
                 </Route>
               </Switch>
+              <Footer align='center' justify='center' background='#292B36' pad='large'>
+                <Box gap='medium'>
+                  <Box direction='row' justify='center' align='end'>
+                    <Logo color='brand' />
+                    <Heading level='3' margin='none'>
+                      ULEAGUE
+                    </Heading>
+                  </Box>
+                  <Box direction='row' justify='between'>
+                    <Anchor>Турниры</Anchor>
+                    <Anchor>Новости</Anchor>
+                    <Anchor>Блог</Anchor>
+                    <Anchor>Поддержка</Anchor>
+                    <Anchor>Конфиденциальность</Anchor>
+                  </Box>
+                </Box>
+              </Footer>
+              <Footer background='#292B36' pad={{ horizontal: 'large', vertical: 'small' }}>
+                <Text textAlign='center' size='small'>
+                  © 2021 ULeague
+                </Text>
+                <Box direction='row' gap='small'>
+                  {/* <Logo color='brand' /> */}
+                </Box>
+              </Footer>
             </Box>
           )}
         </ResponsiveContext.Consumer>

@@ -1185,6 +1185,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/m-plus-1p@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/m-plus-1p/-/m-plus-1p-4.2.0.tgz#7814ef65b402cb3306f67d5856167de11cd629e7"
+  integrity sha512-99NlxXS1+qBzACePjEtUliKoY8rfIG206RuUFY5v4sFT0ZVByYI0eGLNSs3tVEUskI59cGiepF8Bpn8fvhjltg==
+
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"
