@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './App.scss';
 import './i18n';
 import { App } from './App';
 import '@fontsource/m-plus-1p/500.css';
