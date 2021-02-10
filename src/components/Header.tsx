@@ -6,7 +6,7 @@ import { ReactComponent as Logo } from '../images/logo_sm.svg';
 export const Header: FC = () => {
 	return (
 	<header>
-        <Navbar bg='dark' variant='dark' sticky='top' expand="lg" className='border-bottom border-gray'>
+        <Navbar bg='dark' variant='dark' expand="lg">
           <Container>
             <Row noGutters className="position-relative w-100 align-items-center">
               <Col className="d-flex justify-content-start align-items-center">
