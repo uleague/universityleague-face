@@ -1,9 +1,10 @@
 import React, { FC } from "react";
 import { ReactComponent as Rocket } from "../images/rocket.svg";
 import { Container } from "react-bootstrap";
+import { Divider } from "../components/Divider";
 import { JumbotronBlock } from "../components/landing/JumbotronBlock";
 import { Partners } from "../components/landing/Partners";
-import { Divider } from "../components/Divider";
+import { Directions } from "../components/landing/Directions"
 
 export const Landing: FC = () => {
   return (
@@ -12,6 +13,7 @@ export const Landing: FC = () => {
       <Divider />
       <Partners />
       <Divider />
+      <Directions />
     </Container>
   );
 };

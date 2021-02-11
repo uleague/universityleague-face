@@ -11,7 +11,7 @@ export const App: React.FC = () => {
   return (
     <Router>
       <Header />
-      <main>
+      <main className="p-3">
         <Switch>
           <Route path='/blog'>
             <Blog />
