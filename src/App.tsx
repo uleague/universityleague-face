@@ -1,17 +1,20 @@
 import React from 'react';
-import { Header } from './components/Header'
+import styled from '@emotion/styled/macro';
+
+import { Header } from './components/Header';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Landing } from './pages/Landing';
 import { News } from './pages/News';
 import { Blog } from './pages/Blog';
 import { Partners } from './pages/Partners';
 
+const Main = styled.main``;
 
 export const App: React.FC = () => {
   return (
     <Router>
       <Header />
-      <main className="p-3">
+      <Main className='p-3'>
         <Switch>
           <Route path='/blog'>
             <Blog />
@@ -26,7 +29,7 @@ export const App: React.FC = () => {
             <Landing />
           </Route>
         </Switch>
-      </main>
+      </Main>
     </Router>
   );
 };

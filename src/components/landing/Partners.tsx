@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC } from 'react';
 import { Row, Col } from 'react-bootstrap';
 
 import { ReactComponent as Logo } from '../../images/logo_sm.svg';

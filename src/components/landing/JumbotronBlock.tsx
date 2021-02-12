@@ -1,7 +1,7 @@
-import React, { FC } from "react";
-import { ReactComponent as Rocket } from "../../images/rocket.svg";
+import React, { FC } from 'react';
+import { ReactComponent as Rocket } from '../../images/rocket.svg';
 import { Row, Col, Jumbotron, Button } from 'react-bootstrap';
-import ResponsiveEmbed from 'react-bootstrap/ResponsiveEmbed'
+import ResponsiveEmbed from 'react-bootstrap/ResponsiveEmbed';
 
 
 export const JumbotronBlock:FC = () => 
