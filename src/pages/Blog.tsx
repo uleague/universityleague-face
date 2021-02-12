@@ -19,21 +19,17 @@ export const Blog: FC = () => {
         Последние
       </BlogHeader>
       <CardDeck>
-        <BlogCard
-          tag="Esports"
-          img="https://assets-global.website-files.com/5cdadb92bbedfa7aa28f9b50/601da29256675b443d75aeaa_the-commons-20210205_opt.jpg"
-          title="How to Learn Front-End Web Development"
-        />
-        <BlogCard
-          tag="Esports"
-          img="https://assets-global.website-files.com/5cdadb92bbedfa7aa28f9b50/601da29256675b443d75aeaa_the-commons-20210205_opt.jpg"
-          title="How to Learn Front-End Web Development"
-        />
-        <BlogCard
-          tag="Esports"
-          img="https://assets-global.website-files.com/5cdadb92bbedfa7aa28f9b50/601da29256675b443d75aeaa_the-commons-20210205_opt.jpg"
-          title="How to Learn Front-End Web Development"
-        />
+        (
+        {[...Array(6)].map(() => {
+          return (
+            <BlogCard
+              tag="Esports"
+              img="https://assets-global.website-files.com/5cdadb92bbedfa7aa28f9b50/601da29256675b443d75aeaa_the-commons-20210205_opt.jpg"
+              title="How to Learn Front-End Web Development"
+            />
+          );
+        })}
+        )
       </CardDeck>
       <Divider />
     </Container>
