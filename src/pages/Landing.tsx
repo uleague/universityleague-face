@@ -8,7 +8,7 @@ import { Directions } from "../components/landing/Directions"
 
 export const Landing: FC = () => {
   return (
-    <Container fluid className="pt-4">
+    <Container fluid="lg" className="pt-4">
       <JumbotronBlock />
       <Divider />
       <Partners />

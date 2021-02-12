@@ -3,6 +3,7 @@ import { Row, Col } from 'react-bootstrap';
 
 import { ReactComponent as Logo } from '../../images/logo_sm.svg';
 import vsuLogo from "../../images/vsuesportsblue.png"
+import gaugnLogo from "../../images/gaugn.png"
 
 export const Partners: FC = () => {
     return (
@@ -13,7 +14,7 @@ export const Partners: FC = () => {
                 <Logo />
                 <Logo />
                 <Logo />
-                <Logo />
+                <img style={{width: '70px', height: '70px'}} src={gaugnLogo} alt="vsu"/>
                 <img style={{width: '70px', height: '70px'}} src={vsuLogo} alt="vsu"/>
             </Col>
         </Row>
