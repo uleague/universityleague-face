@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { Row, Col } from 'react-bootstrap';
-import { GrGamepad, GrGroup, GrDeploy } from 'react-icons/gr';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { LearnMoreCard } from '../LearnMoreCard'
 
@@ -11,18 +11,16 @@ export const Directions: FC = () => {
             <h2 className="title-2 pl-5">Сферы деятельности</h2>
         </Col>
         <Col>
-            <LearnMoreCard iconColorVar="sucess">
-                <GrGamepad />
+            <LearnMoreCard>
+                <FontAwesomeIcon icon={["fas", "gamepad"]} />
             </LearnMoreCard>
         </Col>
         <Col>
-            <LearnMoreCard iconColorVar="info">
-                <GrDeploy />
+            <LearnMoreCard>
             </LearnMoreCard>
         </Col>
         <Col>
-            <LearnMoreCard iconColorVar="warning">
-                <GrGroup />
+            <LearnMoreCard>
             </LearnMoreCard>
         </Col>
     </Row>
