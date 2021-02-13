@@ -34,16 +34,18 @@ export const Directions: FC = () => {
       <Col xs='12'>
         <h2 className='title-2 pl-lg-5'>Сферы деятельности</h2>
       </Col>
-      {cards.map((card) => (
-        <Col>
-          <LearnMoreCard cardTitle={card.title} cardText={card.text} footerColor={card.footerColor}>
-            <FontAwesomeIcon
-              icon={card.icon}
-              style={{ color: card.footerColor, height: '32px', width: '32px' }}
-            />
-          </LearnMoreCard>
-        </Col>
-      ))}
+      <Col xs="12" className="d-flex flex-wrap">
+        {cards.map((card) => (
+          <Col>
+            <LearnMoreCard cardTitle={card.title} cardText={card.text} footerColor={card.footerColor}>
+              <FontAwesomeIcon
+                icon={card.icon}
+                style={{ color: card.footerColor, height: '32px', width: '32px' }}
+              />
+            </LearnMoreCard>
+          </Col>
+        ))}
+      </Col>
     </Row>
   );
 };

@@ -11,7 +11,8 @@ export const Header: FC = () => {
           <Row noGutters className="position-relative w-100 align-items-center">
             <Col className="d-flex justify-content-start align-items-center">
               <Navbar.Brand href="/" className="d-flex align-items-center">
-                <Logo /> ULEAGUE
+                <Logo />
+                <h3 className="mb-0" style={{ color: "#f4f4f4", fontWeight: "bold" }}>ULEAGUE</h3>
               </Navbar.Brand>
             </Col>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
