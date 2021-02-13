@@ -19,12 +19,24 @@ export const Footer: FC = () => {
             </Row>
             <Row className="mt-1">
                 <Nav className="m-auto">
-                    <Nav.Link href="/">Главная</Nav.Link>
-                    <Nav.Link href="/tournaments">Турниры</Nav.Link>
-                    <Nav.Link href="/news">Новости</Nav.Link>
-                    <Nav.Link href="/blog">Блог</Nav.Link>
-                    <Nav.Link href="mailto:help@universityleague.ru">Поддержка</Nav.Link>
-                    <Nav.Link href="https://disk.yandex.ru/i/3ZjBriky9MUF0w">Условия использования</Nav.Link>
+                    <Nav.Link href="/">
+                        <span className="navItemFooter">Главная</span>
+                    </Nav.Link>
+                    <Nav.Link href="/tournaments">
+                        <span className="navItemFooter">Турниры</span>
+                    </Nav.Link>
+                    <Nav.Link href="/news">
+                        <span className="navItemFooter">Новости</span>
+                    </Nav.Link>
+                    <Nav.Link href="/blog">
+                        <span className="navItemFooter">Блог</span>
+                    </Nav.Link>
+                    <Nav.Link href="mailto:help@universityleague.ru">
+                        <span className="navItemFooter">Поддержка</span>
+                    </Nav.Link>
+                    <Nav.Link href="https://disk.yandex.ru/i/3ZjBriky9MUF0w">
+                        <span className="navItemFooter">Условия использования</span>
+                    </Nav.Link>
                 </Nav>
             </Row>
             <Divider />
@@ -35,11 +47,21 @@ export const Footer: FC = () => {
                     </p>
                 </Col>
                 <Col className="d-flex align-items-center justify-content-end">
-                    <Nav.Link target="_blank" href="https://twitch.com/u_league"><FontAwesomeIcon icon={faTwitch} /></Nav.Link>
-                    <Nav.Link target="_blank" href="https://vk.com/u_league"><FontAwesomeIcon icon={faVk} /></Nav.Link>
-                    <Nav.Link target="_blank" href="https://twitter.com/uleague_ru"><FontAwesomeIcon icon={faTwitter} /></Nav.Link>
-                    <Nav.Link target="_blank" href="https://www.youtube.com/channel/UCjqxc1BpJzOby0AlR0FO8iQ"><FontAwesomeIcon icon={faYoutube} /></Nav.Link>
-                    <Nav.Link target="_blank" href="https://discord.com/invite/GTDHJsP"><FontAwesomeIcon icon={faDiscord} /></Nav.Link>
+                    <Nav.Link target="_blank" href="https://twitch.com/u_league">
+                        <FontAwesomeIcon className="navItemFooter" icon={faTwitch} />
+                    </Nav.Link>
+                    <Nav.Link target="_blank" href="https://vk.com/u_league">
+                        <FontAwesomeIcon className="navItemFooter" icon={faVk} />
+                    </Nav.Link>
+                    <Nav.Link target="_blank" href="https://twitter.com/uleague_ru">
+                        <FontAwesomeIcon className="navItemFooter" icon={faTwitter} />
+                    </Nav.Link>
+                    <Nav.Link target="_blank" href="https://www.youtube.com/channel/UCjqxc1BpJzOby0AlR0FO8iQ">
+                        <FontAwesomeIcon className="navItemFooter" icon={faYoutube} />
+                    </Nav.Link>
+                    <Nav.Link target="_blank" href="https://discord.com/invite/GTDHJsP">
+                        <FontAwesomeIcon className="navItemFooter" icon={faDiscord} />
+                    </Nav.Link>
                 </Col>
             </Row>
         </Container>

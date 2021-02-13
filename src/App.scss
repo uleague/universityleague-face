@@ -37,5 +37,12 @@ footer {
 	background-color: #1C1E25;
 }
 
+.navItemFooter {
+	color: #f4f4f4;
+&:hover {
+	color: #c4c4c4;
+}
+}
+
 /* import bootstrap to set changes */
 @import "../node_modules/bootstrap/scss/bootstrap";
