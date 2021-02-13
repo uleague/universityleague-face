@@ -14,8 +14,13 @@ export const LearnMoreCard: FC<{
       <Card.Body>
         <Card.Title style={{ fontWeight: "normal" }}>{cardTitle}</Card.Title>
         <Card.Text style={{ fontWeight: "lighter" }}>{cardText}</Card.Text>
-        <Card.Footer color={footerColor} className="d-flex align-items-center">
-          Узнать больше{" "}
+        <Card.Footer
+          color={footerColor}
+          className="d-flex align-items-center"
+          style={{ cursor: "pointer" }}
+          onClick={() => {}}
+        >
+          Узнать больше
           <FontAwesomeIcon
             className="ml-2"
             icon={faLongArrowAltRight}

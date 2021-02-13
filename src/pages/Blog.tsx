@@ -20,12 +20,12 @@ export const Blog: FC = () => {
       </BlogHeader>
       <CardDeck>
         (
-        {[...Array(6)].map(() => {
+        {[...Array(3)].map(() => {
           return (
             <BlogCard
               tag="Esports"
-              img="https://assets-global.website-files.com/5cdadb92bbedfa7aa28f9b50/601da29256675b443d75aeaa_the-commons-20210205_opt.jpg"
-              title="How to Learn Front-End Web Development"
+              img="https://uleague-afishas.s3.eu-central-1.amazonaws.com/ul_tournament.png"
+              title="Как собрать команду на турнир?"
             />
           );
         })}
