@@ -32,9 +32,6 @@ export const Footer: FC = () => {
             <Nav.Link as={Link} to="/tournaments">
               <span className="navItemFooter">Турниры</span>
             </Nav.Link>
-            <Nav.Link as={Link} to="/news">
-              <span className="navItemFooter">Новости</span>
-            </Nav.Link>
             <Nav.Link as={Link} to="/blog">
               <span className="navItemFooter">Блог</span>
             </Nav.Link>
