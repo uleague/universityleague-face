@@ -9,7 +9,7 @@ export const JumbotronBlock:FC = () =>
     return (
         <Row className="align-items-center">
             <Col>
-            <Jumbotron>
+            <Jumbotron className="pl-0">
                 <h1 className="mb-4">Дом студенческого киберспорта</h1>
                 <p className="mb-5">
                 Создаем возможности всем студентам соревноваться, расти профессионально и находить новых верных друзей.

@@ -32,7 +32,7 @@ export const Directions: FC = () => {
   return (
     <Row className='d-flex align-items-center mt-5'>
       <Col xs='12'>
-        <h2 className='title-2 pl-lg-5'>Сферы деятельности</h2>
+        <h2 className='title-2 pl-lg-0'>Сферы деятельности</h2>
       </Col>
       <Col xs="12" className="d-flex flex-wrap">
         {cards.map((card) => (
