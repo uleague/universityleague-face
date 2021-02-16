@@ -13,7 +13,9 @@ export const LearnMoreCard: FC<{
       <Card.Header>{children}</Card.Header>
       <Card.Body>
         <Card.Title style={{ fontWeight: "normal" }}>{cardTitle}</Card.Title>
-        <Card.Text style={{ fontWeight: "lighter" }}>{cardText}</Card.Text>
+        <Card.Text style={{ color: "#adb5bd", fontWeight: "lighter" }}>
+          {cardText}
+        </Card.Text>
         <Card.Footer
           color={footerColor}
           className="d-flex align-items-center"
