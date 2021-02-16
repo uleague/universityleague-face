@@ -34,9 +34,6 @@ export const Header: FC = () => {
                 <Nav.Link as={Link} to="/tournaments">
                   Турниры
                 </Nav.Link>
-                <Nav.Link as={Link} to="/news">
-                  Новости
-                </Nav.Link>
                 <Nav.Link as={Link} to="/blog">
                   Блог
                 </Nav.Link>
