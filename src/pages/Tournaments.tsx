@@ -1,12 +1,16 @@
 import { faRoad } from "@fortawesome/free-solid-svg-icons";
 import React, { FC } from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import { JumbotronBlock } from "../components/tournaments/JumbotronBlock";
+import { GameCard } from "../components/tournaments/GameCard";
+
+const games = [];
 
 export const Tournaments: FC = () => {
   return (
-    <JumbotronBlock />
-    // <Container fluid="lg" className="pt-4">
-    // </Container>
+    <div>
+      <JumbotronBlock />
+      <GameCard gameTitle="Dota 2" />
+    </div>
   );
 };

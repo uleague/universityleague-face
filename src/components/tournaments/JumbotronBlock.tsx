@@ -1,26 +1,18 @@
 import React, { FC } from 'react';
-import { ReactComponent as Rocket } from '../../images/rocket.svg';
-import { Row, Col, Jumbotron, Button } from 'react-bootstrap';
-import ResponsiveEmbed from 'react-bootstrap/ResponsiveEmbed';
+import { Jumbotron } from 'react-bootstrap';
+import compete from "../../images/compete.png"
 
 
 export const JumbotronBlock:FC = () => 
 {
     return (
-        <Row className="align-items-center">
-            <Col>
-            <Jumbotron className="text-center p-5" style={{ backgroundColor: "#1b1f24" }}>
-                <h1 className="">Дом студенческого киберспорта</h1>
-                <p className="" style={{ color: '#adb5bd'}}>
-                Создаем возможности всем студентам соревноваться, расти профессионально и находить новых верных друзей.
+        <div>
+            <Jumbotron className="p-5 d-flex flex-column" style={{ backgroundColor: "#1b1f24", backgroundImage: `url(${compete})`, backgroundSize: "cover", height: "35vh", backgroundPosition: "50% 50%" }}>
+                <h1 className="mb-4 mt-5" style={{ color: "#f4f4f4" }}><span style={{ color: "#37C794" }}>Соревнуйся</span> на равных</h1>
+                <p style={{ color: '#adb5bd'}}>
+                Участвуй в турнирах, попадай в рейтинг и становись лучшим в своей дисциплине.
                 </p>
             </Jumbotron>
-            </Col>
-            {/* <Col xs={{ order: 'first', span: "12" }} lg={{ order: 'last'}}> */}
-            {/* <ResponsiveEmbed aspectRatio="4by3">
-                <Rocket />
-            </ResponsiveEmbed> */}
-            {/* </Col> */}
-        </Row>
+        </div>
     )
 };
