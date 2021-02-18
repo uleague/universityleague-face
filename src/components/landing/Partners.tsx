@@ -2,7 +2,6 @@ import React, { FC } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import styled from '@emotion/styled/macro';
 
-import { ReactComponent as Logo } from '../../images/logo_sm.svg';
 import vsuLogo from '../../images/vsuesportsblue.png';
 import gaugnLogo from '../../images/gaugn.png';
 import impulseLogo from '../../images/impulse.png'

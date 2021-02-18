@@ -5,6 +5,7 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Landing } from './pages/Landing';
+import { Blogs } from './pages/Blogs';
 import { Blog } from './pages/Blog';
 import { Partners } from './pages/Partners';
 import { Tournaments } from './pages/Tournaments';
@@ -18,8 +19,9 @@ export const App: React.FC = () => {
       <Main>
         <Switch>
           <Route path='/blog'>
-            <Blog />
+            <Blogs />
           </Route>
+          <Route path='/blogs/:blogId' component={Blog} />
           <Route path='/partners'>
             <Partners />
           </Route>
