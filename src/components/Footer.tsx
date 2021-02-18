@@ -16,7 +16,7 @@ import { ReactComponent as Logo } from "../images/logo_sm.svg";
 
 export const Footer: FC = () => {
   return (
-    <footer>
+    <footer style={{ position: "absolute", width: "100%" }}>
       <Container className="mt-5 p-3">
         <Row className="mt-2">
           <Col xs="12" className="d-flex justify-content-center">

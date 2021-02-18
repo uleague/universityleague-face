@@ -1,0 +1,13 @@
+.card-blog {
+    .card-tag {
+        color:#7cb9a3;
+    }
+   &:hover
+    {
+        box-shadow: 0 40px 60px -20px #1b1f24bd;
+        z-index: 100;
+        .card-tag {
+            color: #37C794;
+        }
+    }   
+}

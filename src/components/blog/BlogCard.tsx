@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import { Card, Col } from 'react-bootstrap';
 import styled from '@emotion/styled/macro';
 import { Link } from 'react-router-dom';
+import "../../styles/blog.scss"
 
 const CardTag = styled.h5`
   margin-left: 10px;
@@ -28,8 +29,8 @@ export const BlogCard: FC<{
         style={{ cursor: 'pointer', textDecoration: 'none' }}
         className='d-flex flex-column justify-content-start pb-4'
       >
-        <Card style={{ backgroundColor: '#292B36', border: 'none' }}>
-          {tag && <CardTag style={{ color: '#37C794', fontWeight: 300 }}>{tag}</CardTag>}
+        <Card className="p-2" bsPrefix="card-blog" style={{ backgroundColor: '#292B36', border: 'none' }}>
+          {tag && <CardTag className="card-tag" style={{ fontWeight: 300 }}>{tag}</CardTag>}
           <Card.Img variant='top' src={img} style={{ height: '250px', borderRadius: '20px' }} />
           <CardTitle style={{ fontFamily: "Noto Serif, serif", color: "#f4f4f4" }}>{title}</CardTitle>
         </Card>
