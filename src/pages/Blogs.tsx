@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { CardDeck, Container, Row, Col } from "react-bootstrap";
 import { BlogCard } from "../components/blog/BlogCard";
 import { Divider } from "../components/Divider";
-import styled from '@emotion/styled/macro';
+import styled from "@emotion/styled/macro";
 
 const BlogHeader = styled.h2`
   margin-right: 10px;
@@ -47,4 +47,4 @@ export const Blogs: FC = () => {
       <Divider />
     </Container>
   );
-}
+};
