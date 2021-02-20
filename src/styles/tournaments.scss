@@ -7,13 +7,11 @@
     -moz-transition:all .9s ease; 
     -o-transition:all .9s ease;
     -ms-transition:all .9s ease; 
-    opacity: 0.9;
     width: 300px;
     height: 200px;
     }
     &:hover {
         .card-image {
-            opacity: 1;
             -webkit-transform:scale(1.15);
             -moz-transform:scale(1.15);
             -ms-transform:scale(1.15);
@@ -31,4 +29,15 @@
     overflow: hidden;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
     border-radius: 5px;
+}
+
+.cta-jumbo
+{
+    background: linear-gradient(45deg, #111016, #292b36, #1b1f24);
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 0 auto;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    transition: .5s;
 }
