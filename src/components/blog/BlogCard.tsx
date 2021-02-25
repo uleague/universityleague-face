@@ -18,14 +18,15 @@ const CardTitle = styled.h4`
 `;
 
 export const BlogCard: FC<{
+  slug: string;
   tag: string;
   img: string;
   title: string;
-}> = ({ tag, img, title }) => {
+}> = ({ slug, tag, img, title }) => {
   return (
     <Col md="4" sm="12" className="d-flex justify-content-center">
       <Link
-        to='#'
+        to={`blogs/${slug}`}
         style={{ cursor: 'pointer', textDecoration: 'none' }}
         className='d-flex flex-column justify-content-start pb-4'
       >

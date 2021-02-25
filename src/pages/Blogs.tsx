@@ -3,6 +3,7 @@ import { CardDeck, Container, Row, Col } from "react-bootstrap";
 import { BlogCard } from "../components/blog/BlogCard";
 import { Divider } from "../components/Divider";
 import styled from "@emotion/styled/macro";
+import { Posts } from "../data/blog";
 
 const BlogHeader = styled.h2`
   margin-right: 10px;
@@ -33,12 +34,13 @@ export const Blogs: FC = () => {
       </BlogHeader>
       <Row>
         <CardDeck className="m-auto">
-          {[...Array(3)].map(() => {
+          {Posts.map((post) => {
             return (
               <BlogCard
-                tag="Esports"
-                img="https://uleague-afishas.s3.eu-central-1.amazonaws.com/ul_tournament.png"
-                title="Как собрать команду на турнир?"
+                slug={post.slug}
+                tag={post.tag}
+                img={post.image_url}
+                title={post.title}
               />
             );
           })}
