@@ -15,7 +15,7 @@ export const JumbotronBlock:FC = () =>
                 Создаем возможности всем студентам соревноваться, расти профессионально и находить новых верных друзей.
                 </p>
                 <p>
-                <Button size="lg" variant="danger">Подробнее</Button>
+                <Button size="lg" variant="danger" href="/blogs/about_uleague">Подробнее</Button>
                 </p>
             </Jumbotron>
             </Col>

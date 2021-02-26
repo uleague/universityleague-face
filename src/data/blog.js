@@ -4,32 +4,46 @@ export const Posts =
         "id": 1,
         "slug": "about_uleague",
         "tag": "Community",
-        "image_url": "https://uleague-afishas.s3.eu-central-1.amazonaws.com/ul_tournament.png",
+        "image_url": "https://uleague-face.s3.eu-central-1.amazonaws.com/about.png",
         "title": "О ULeague",
-        "text": ""
+        "body": [
+            "Всем привет, этот пост про команду ULeague, ценности и планы.",
+            "Мы группа студентов и выпускников, которые стремятся создать в студенческом киберспорте то, о чем сами мечтали при поступлении.",
+            "Наша миссия — создавать равные возможности всем студентам для участия в соревнованиях, профессионального роста и \
+            поиска друзей на всю жизнь.",
+            "Мы нацелены на продвижение принципов взаимоуважения, готовности поделиться знаниями и открытости к экспериментам.",
+            "Многие вещи, которые мы делаем могут показаться непрофессиональными или глупыми. Но мы верим, что именно так\
+            рождается и закаливается профессионализм. Мы не боимся взяться за трудную задачу и работать в поте лица, чтобы ее решить.\
+            Наша платформа по автоматизации Dota 2 турниров тому яркое подтверждение. Нам удалось обеспечить безотказность платформы и \
+            реализовать достаточно сложную в техническом плане систему. Такого же уровня автоматизация реализовывалась большими компаниями годами.\
+            Мы реализовали это вдвоем за 3 месяца.",
+            "В наших планах не останавливаться и развиваться в трех направлениях: проведение турниров, развитие сообщества и карьерное развитие.",
+            "Предлагаем каждому вузу партнерство и общее развитие студенческого киберспорта. 1 + 1 всегда > 2. ",
+            "Мы активно ищем активных и ответственных ребят в нашу команду. Пишите нам на почту с кратким рассказом о себе."
+        ]
     },
     {
         "id": 2,
         "slug": "competition",
         "tag": "Competition",
-        "image_url": "https://uleague-afishas.s3.eu-central-1.amazonaws.com/ul_tournament.png",
+        "image_url": "https://uleague-face.s3.eu-central-1.amazonaws.com/compete.png",
         "title": "Соревнования",
-        "text": ""
+        "body": []
     },
     {
         "id": 3,
         "slug": "community",
         "tag": "Community",
-        "image_url": "https://uleague-afishas.s3.eu-central-1.amazonaws.com/ul_tournament.png",
-        "title": "Про работу на коммьюнити",
-        "text": ""
+        "image_url": "https://uleague-face.s3.eu-central-1.amazonaws.com/community.png",
+        "title": "Коммьюнити",
+        "body": []
     },
     {
         "id": 4,
         "slug": "careers",
         "tag": "Careers",
-        "image_url": "https://uleague-afishas.s3.eu-central-1.amazonaws.com/ul_tournament.png",
+        "image_url": "https://uleague-face.s3.eu-central-1.amazonaws.com/careers.png",
         "title": "Профессиональное развитие",
-        "text": ""
+        "body": []
     },
 ];

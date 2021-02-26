@@ -21,7 +21,7 @@ export const App: React.FC = () => {
           <Route path='/blog'>
             <Blogs />
           </Route>
-          <Route path='/blogs/:blogId' component={Blog} />
+          <Route path='/blogs/:blogSlug' component={Blog} />
           <Route path='/partners'>
             <Partners />
           </Route>
