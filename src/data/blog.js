@@ -13,7 +13,7 @@ export const Posts =
         "slug": "competition",
         "tag": "Competition",
         "image_url": "https://uleague-afishas.s3.eu-central-1.amazonaws.com/ul_tournament.png",
-        "title": "Про соревнования",
+        "title": "Соревнования",
         "text": ""
     },
     {
@@ -21,7 +21,7 @@ export const Posts =
         "slug": "community",
         "tag": "Community",
         "image_url": "https://uleague-afishas.s3.eu-central-1.amazonaws.com/ul_tournament.png",
-        "title": "Про работы с коммьюнити",
+        "title": "Про работу на коммьюнити",
         "text": ""
     },
     {
