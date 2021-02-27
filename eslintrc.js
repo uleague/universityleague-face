@@ -31,6 +31,8 @@ module.exports = {
   rules: {
     quotes: [2, 'single', { avoidEscape: true }],
     'linebreak-style': 'off',
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': ['error'],
     'prettier/prettier': [
       'error',
       {
