@@ -2,7 +2,6 @@ import React, { FC } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import styled from '@emotion/styled/macro';
 
-import { ReactComponent as Logo } from '../../images/logo_sm.svg';
 import vsuLogo from '../../images/vsuesportsblue.png';
 import gaugnLogo from '../../images/gaugn.png';
 import impulseLogo from '../../images/impulse.png'
@@ -16,9 +15,15 @@ export const Partners: FC = () => {
   return (
     <Row className='d-flex align-items-center mt-3'>
       <Col className='d-flex align-items-center justify-content-center'>
-        <PartnerLogo className="mr-3 ml-3" src={impulseLogo} alt='impulse' />
-        <PartnerLogo className="mr-3 ml-3" src={gaugnLogo} alt='gaugn' />
-        <PartnerLogo className="mr-3 ml-3" src={vsuLogo} alt='vsu' />
+        <a href="https://vk.com/impulse_esport" target="_blank">
+          <PartnerLogo className="mr-3 ml-3" src={impulseLogo} alt='impulse' />
+        </a>
+        <a href="https://vk.com/gaugncybersport" target="_blank">
+          <PartnerLogo className="mr-3 ml-3" src={gaugnLogo} alt='gaugn' />
+        </a>
+        <a href="https://vk.com/vsuesports" target="_blank">
+          <PartnerLogo className="mr-3 ml-3" src={vsuLogo} alt='vsu' />
+        </a>
       </Col>
     </Row>
   );

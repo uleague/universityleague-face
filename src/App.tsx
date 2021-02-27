@@ -16,12 +16,12 @@ export const App: React.FC = () => {
   return (
     <Router>
       <Header />
-      <Main className='p-3'>
+      <Main>
         <Switch>
           <Route path='/blog'>
             <Blogs />
           </Route>
-          <Route path='/blogs/:blogId' component={Blog} />
+          <Route path='/blogs/:blogSlug' component={Blog} />
           <Route path='/partners'>
             <Partners />
           </Route>

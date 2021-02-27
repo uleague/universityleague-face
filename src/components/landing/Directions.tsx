@@ -10,21 +10,21 @@ export const Directions: FC = () => {
     {
       title: 'Соревнования',
       text: 'Турниры по ключевым и экспериментальным киберспортивным дисциплинам.',
-      link: '',
+      link: '/blogs/competition',
       footerColor: '#37C794',
       icon: faGamepad,
     },
     {
       title: 'Профессия',
       text: 'Развитие профессиональных навыков и карьерные возможности для каждого студента.',
-      link: '',
+      link: '/blogs/careers',
       footerColor: '#DC3545',
       icon: faPaperPlane,
     },
     {
-      title: 'Дружественные связи',
+      title: 'Коммьюнити',
       text: 'Возможности найти единомышленников, товарищей и близких друзей на всю жизнь.',
-      link: '',
+      link: '/blogs/community',
       footerColor: '#37A4C7',
       icon: faUsers,
     },
@@ -37,7 +37,7 @@ export const Directions: FC = () => {
       <Col xs="12" className="d-flex flex-wrap">
         {cards.map((card) => (
           <Col>
-            <LearnMoreCard cardTitle={card.title} cardText={card.text} footerColor={card.footerColor}>
+            <LearnMoreCard cardTitle={card.title} cardText={card.text} cardLink={card.link} footerColor={card.footerColor}>
               <FontAwesomeIcon
                 icon={card.icon}
                 style={{ color: card.footerColor, height: '32px', width: '32px' }}

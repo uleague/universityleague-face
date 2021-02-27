@@ -1,0 +1,26 @@
+.card-blog {
+    .card-tag {
+        color:#6c757d;
+    }
+    border-radius: 20px;
+   &:hover
+    {
+        box-shadow: 0 40px 60px -20px #1b1f24bd;
+        z-index: 100;
+        .card-tag {
+            color: #37C794;
+        }
+    }   
+}
+
+.blog-body {
+    color: #f4f4f4;
+    font-family: "Bitter, serif";
+    text-align: justify;
+    text-indent: 40px;
+}
+
+.blog-body:last-of-type {
+    color: #37C794;
+   text-align: end;
+}

@@ -1,0 +1,43 @@
+.card-primary {
+    border-radius: 5px;
+    background-color: #292B36;
+    border: 0;
+.card-image {
+    -webkit-transition:all .9s ease; 
+    -moz-transition:all .9s ease; 
+    -o-transition:all .9s ease;
+    -ms-transition:all .9s ease; 
+    width: 300px;
+    height: 200px;
+    }
+    &:hover {
+        .card-image {
+            -webkit-transform:scale(1.15);
+            -moz-transform:scale(1.15);
+            -ms-transform:scale(1.15);
+            -o-transform:scale(1.15);
+            transform:scale(1.15);
+        }
+        .card-title {
+            color: #37C794;
+        }
+    }
+}
+
+.card-image-box {
+    background: #292B36;
+    overflow: hidden;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+    border-radius: 5px;
+}
+
+.cta-jumbo
+{
+    background: linear-gradient(45deg, #111016, #292b36, #1b1f24);
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 0 auto;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    transition: .5s;
+}
