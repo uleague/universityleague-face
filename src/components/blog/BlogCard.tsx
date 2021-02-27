@@ -33,7 +33,7 @@ export const BlogCard: FC<{
         <Card className="p-2" bsPrefix="card-blog" style={{ backgroundColor: '#292B36', border: 'none' }}>
           {tag && <CardTag className="card-tag" style={{ fontWeight: 300 }}>{tag}</CardTag>}
           <Card.Img variant='top' src={img} style={{ height: '200px', borderRadius: '20px' }} />
-          <CardTitle style={{ fontFamily: "Noto Serif, serif", color: "#f4f4f4" }}>{title}</CardTitle>
+          <CardTitle style={{ fontFamily: "Bitter, serif", color: "#f4f4f4" }}>{title}</CardTitle>
         </Card>
       </Link>
     </Col>

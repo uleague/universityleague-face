@@ -22,7 +22,7 @@ export const Tournaments: FC = () => {
             <GameCard
               gameTitle="Dota 2"
               gameImage={dota2}
-              cardLink="https://www.uleague.ru"
+              cardLink="https://dota.uleague.ru"
               active
             />
             <GameCard gameTitle="CS:GO" gameImage={csgo} />

@@ -24,8 +24,8 @@ function MyVerticallyCenteredModal(props:any) {
         </p>
       </Modal.Body>
       <Modal.Footer>
-        <Button href="https://google.com">Подать заявку</Button>
-        <Button variant="dark" onClick={props.onHide} target="_blank">Close</Button>
+        <Button href="https://forms.gle/xmpsEXUwEwLYBKp99" target="_blank">Подать заявку</Button>
+        <Button variant="dark" onClick={props.onHide}>Close</Button>
       </Modal.Footer>
     </Modal>
   );

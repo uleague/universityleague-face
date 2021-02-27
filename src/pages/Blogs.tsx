@@ -11,8 +11,8 @@ const BlogHeader = styled.h2`
   margin-left: 10px;
   padding-top: 50px;
   padding-bottom: 10px;
-  font-weight: 100;
-  font-family: "Noto Serif", serif;
+  font-weight: 400;
+  font-family: "Bitter", serif;
 `;
 
 export const Blogs: FC = () => {
@@ -22,7 +22,7 @@ export const Blogs: FC = () => {
         style={{
           color: "#f4f4f4",
           fontSize: "sm",
-          fontFamily: "Noto Serif, serif",
+          fontFamily: "Bitter, serif",
         }}
         className="text-center mb-4 mt-3"
       >

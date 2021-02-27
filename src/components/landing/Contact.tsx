@@ -12,7 +12,7 @@ export const Contact: FC = () => {
           </p>
         </Col>
         <Col className='d-flex align-items-center mb-3'>
-          <Button size='lg' variant='danger' className='btn-contact m-auto'>
+          <Button size='lg' variant='danger' className='btn-contact m-auto' href="https://forms.gle/xmpsEXUwEwLYBKp99">
             Связаться
           </Button>
         </Col>

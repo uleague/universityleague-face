@@ -12,7 +12,7 @@ export const CTAJoinTeam:FC = () =>
                 Получи практический опыт работы в киберспортивной индустрии, знания от каждого члена команды ULeague.
                 </p>
                 <p className="m-auto pt-2">
-                    <Button variant="info" size="lg">Присоединиться</Button>
+                    <Button variant="info" size="lg" href="https://forms.gle/xmpsEXUwEwLYBKp99">Присоединиться</Button>
                 </p>
             </Jumbotron>
         </div>
