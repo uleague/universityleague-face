@@ -50,7 +50,7 @@ export const GameCard: FC<{
       className='d-flex flex-column'
       href={active ? cardLink : undefined}
       target='_blank'
-      onClick={!active ? () => setModalShow(true) : undefined}
+      onClick={!active ? () => setModalShow(true) : () = {}}
       >
       <div>
         <Card className="mt-5 p-1 card-primary">
