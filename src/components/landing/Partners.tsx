@@ -14,6 +14,8 @@ const PartnerLogo = styled.img`
 export const Partners: FC = () => {
   return (
     <Row className='d-flex align-items-center mt-3'>
+      <Col xs="12">
+      </Col>
       <Col className='d-flex align-items-center justify-content-center'>
         <a href="https://vk.com/impulse_esport" target="_blank">
           <PartnerLogo className="mr-3 ml-3" src={impulseLogo} alt='impulse' />

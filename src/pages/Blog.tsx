@@ -17,7 +17,7 @@ export const Blog: FC = () => {
           <img
             src={post.image_url}
             alt="article_img"
-            style={{ height: "90%", width: "90%" }}
+            style={{ height: "90%", width: "90%", borderRadius: "50px" }}
           />
         </Col>
       </Row>
